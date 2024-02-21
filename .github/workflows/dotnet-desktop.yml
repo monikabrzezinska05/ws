@@ -4,6 +4,8 @@ on:
 jobs:
   tests:
     runs-on: ubunto-22.04
+    env: 
+      pgconn: ${{secrets.pgconn}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
