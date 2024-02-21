@@ -3,7 +3,7 @@ on:
 
 jobs:
   tests:
-    runs-on: ubunto-22.04
+    runs-on: ubuntu-22.04
     env: 
       pgconn: ${{secrets.pgconn}}
     steps:
