@@ -1,0 +1,5 @@
+<input [formControl]="messageContent">
+<button (click)="sendMessageEcho()">Send with Echo</button><button (click)="sendMessageBroadcast()">Send with Broadcast</button>
+
+
+{{messages | json}}
