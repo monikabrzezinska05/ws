@@ -1,4 +1,5 @@
 using lib;
+using Microsoft.AspNetCore.Hosting;
 using ws;
 
 namespace Test;
@@ -6,6 +7,13 @@ namespace Test;
 [TestFixture]
 public class Tests
 {
+    [SetUp]
+    public void Setup()
+    {
+        Startup.Statup(null);
+    }
+    
+    
     [Test]
     public async Task MyTest()
     {
